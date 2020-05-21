@@ -1,0 +1,17 @@
+{
+  "api_response": {
+    "data": {
+      "userPayment": {
+        "accountHolderName": "Ulysses",
+        "accountNumber": "88888888",
+        "sortCodeOne": "22",
+        "sortCodeTwo": "22",
+        "sortCodeThree": "22",
+        "paymentDatePicker": "12",
+        "confirm": false,
+        "consent": false
+      },
+      "redirectTo": "/yourloan/paymentdetails"
+    }
+  }
+}

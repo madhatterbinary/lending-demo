@@ -1,0 +1,38 @@
+// SASS Variables
+@import 'src/scss/base/colors';
+@import 'src/scss/base/mediaqueries';
+
+.user-security-questions-screen {
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+
+    h3 {
+        width: 100%;
+
+        &.title {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            padding-top: 0;
+        }
+    }
+    .user-security-questions-form.form-container {
+        max-width: 100%;
+    }
+}
+
+@media #{$tablet} {
+    .user-security-questions-screen {
+        width: 75vw;
+
+        .user-security-questions-form.form-container {
+            padding-top: 0;
+        }
+
+        h3 {
+            padding-top: 50px;
+        }
+    }
+}

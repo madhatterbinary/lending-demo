@@ -1,0 +1,18 @@
+// SASS Variables
+@import 'src/scss/base/colors';
+@import 'src/scss/base/mediaqueries';
+
+.user-information-timeline {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    width: 100vw;
+
+    .timeline {
+        align-self: center;
+        max-width: 900px;
+        position: relative;
+        width: 100%;
+    }
+}

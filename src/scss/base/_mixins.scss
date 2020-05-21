@@ -1,0 +1,49 @@
+// Grid Loop
+@mixin grid-loop($columns-reduced-by) {
+    @for $i from 1 through $grid-columns {
+        $percentage: percentage(if($i/($grid-columns - $columns-reduced-by) < 1, $i/($grid-columns - $columns-reduced-by), 1));
+
+        .col-lg-#{$i} {
+            flex-basis: $percentage;
+            max-width: $percentage;
+        }
+
+        .col-lg-offset-#{$i} {
+            margin-left: $percentage;
+        }
+    }
+}
+
+// Clearfix (always use for sanity)
+@mixin clearfix {
+
+    &::before,
+    &::after {
+        content: '';
+        display: table;
+    }
+
+    &::after {
+        clear: both;
+    }
+}
+
+@mixin fade-animation-builder($speed) {
+    .fade-#{$speed}-enter {
+        opacity: .01;
+        transition: opacity $speed * 1ms ease-in;
+
+        &-active {
+            opacity: 1;
+        }
+    }
+
+    .fade-#{$speed}-exit {
+        opacity: 1;
+        transition: opacity $speed * 1ms ease-in;
+
+        &-active {
+            opacity: .01;
+        }
+    }
+}

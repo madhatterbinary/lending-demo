@@ -1,0 +1,17 @@
+{
+    "api_response": {
+        "data": {
+            "directDebitConfirm": {
+                "accountholdername": "Ulysses",
+                "accountnumber": "88888888",
+                "sortcodeone": "22",
+                "sortcodetwo": "22",
+                "sortcodethree": "22",
+                "paymentdatepicker": "12",
+                "confirm": null,
+                "consent": null
+            },
+            "redirectTo": "/yourloan/directdebitconfirmation"
+        }
+    }
+}

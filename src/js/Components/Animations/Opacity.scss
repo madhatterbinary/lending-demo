@@ -1,0 +1,7 @@
+@import "../../../scss/base/mixins.scss";
+
+$speeds: (100, 200, 300, 400, 500, 1500) !default;
+
+@each $speed in $speeds {
+  @include fade-animation-builder($speed);
+}

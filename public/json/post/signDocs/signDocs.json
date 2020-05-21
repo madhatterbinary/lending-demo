@@ -1,0 +1,16 @@
+{
+    "api_response": {
+        "data": {
+            "signDocs": {
+                "dynamic_data": {
+                    "terms": null,
+                    "consent": null
+                }
+            },
+            "formErrors": {
+                "terms": "required*"
+            },
+            "redirectToNext": "/"
+        }
+    }
+}

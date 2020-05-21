@@ -1,0 +1,8 @@
+{
+    "api_response": {
+        "data": {
+            "verifiedEmail": {},
+            "redirectToNext": "/yourloan/paymentdetails"
+        }
+    }
+}

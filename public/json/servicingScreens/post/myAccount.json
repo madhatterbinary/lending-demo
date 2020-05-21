@@ -1,0 +1,35 @@
+{
+  "data": {
+    "loan_amount": "15000",
+    "loan_rate": "19.9",
+    "agreed_annuity": "339.39",
+    "total_payable": "16000",
+    "form_data": {
+      "additional_payment": null,
+      "reduce_loan_term": false,
+      "reduce_monthly_payment": false,
+      "my_account": {
+        "personal_details": {
+          "title": "Ms.",
+          "first_name": "Julia",
+          "last_name": "Lovelace",
+          "date_of_birth": "12/09/1978",
+          "email_address": "julia@gmail.com",
+          "phone_number": "12758449782"
+        },
+        "address": {
+          "building": "7",
+          "line_1": "Fink Street",
+          "line_2": "Hygh Park",
+          "post_town": "York",
+          "postcode": "PW1H 1PN",
+          "moved_in_date": "12/11/2012"
+        },
+        "bank_account": {
+          "sort_code": "11-11-11",
+          "account_number": "11111111"
+        }
+      }
+    }
+  }
+}

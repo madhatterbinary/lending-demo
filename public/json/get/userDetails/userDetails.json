@@ -1,0 +1,30 @@
+{
+  "response": {
+    "next_action": null,
+    "data": {
+      "form_data": {
+        "title": "Mr",
+        "first_name": "Ulysses",
+        "last_name": "Alvarez",
+        "date_of_birth": "1960-02-18",
+        "email_address": "ulysses@yobota.com",
+        "phone_number": "0776738518"
+      },
+      "page_data": {
+        "completed_pages": ["borrowing_details"],
+        "current_step": "personal_details"
+      },
+      "ref_data": {}
+    },
+    "read_only": false,
+    "user_authenticated": false,
+    "errors": {
+      "form_validation": {
+        "form_error": [],
+        "form_fields": {}
+      }
+    }
+  },
+  "status_code": 200,
+  "csrf_token": "Fyox2Z3KYvAAIIFslY1CuJCDKX1dTJmB5QK0AQOb0slJbrPEDzX1lMmdjO42SPH1"
+}

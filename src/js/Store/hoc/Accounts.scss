@@ -1,0 +1,634 @@
+// SASS Variables
+@import "src/scss/base/colors.scss";
+@import "src/scss/base/mediaqueries.scss";
+
+.my-account-screen {
+    margin-right: 80px;
+    margin-bottom: 20px;
+    .Toastify__toast-container--top-right {
+        top: 6em;
+        .material-icons {
+            color: white;
+            font-size: 40px;
+            padding-right: 10px;
+        }
+    }
+    .md-checkbox {
+        font-size: 1em !important;
+
+        input {
+            height: 25px;
+        }
+    }
+
+    .current-address {
+        .address-box-container {
+            background-color: $lighter-grey;
+            align-self: left;
+            text-align: left;
+            padding: 15px;
+            display: inline-block;
+            width: 230px;
+            margin-top: 10px;
+            color: $font-color;
+            align-self: center;
+
+            .answer>* {
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+            div {
+                margin-bottom: 10px;
+            }
+        }
+
+        .address-status {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            top: 0px;
+            padding-bottom: 0px;
+        }
+
+        .select-field {
+            .grey.form-field-label {
+                height: 100%;
+                margin-top: 0px;
+
+                span {
+                    text-align: left !important;
+                }
+            }
+        }
+    }
+
+    .select-field label {
+        height: 0px !important;
+        margin-top: 5px;
+    }
+
+    .text-field label {
+        height: 10px !important;
+        margin-top: 5px;
+    }
+    .text-field label:first-child {
+        height: 20px !important;
+    }
+
+    .select-field {
+        select {
+            margin-bottom: 5px !important;
+        }
+
+        .grey.form-field-label {
+            // height: 55px;
+            // margin-top: 8px;
+        }
+    }
+
+    .address-item-container {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        li {
+            width: 100%;
+            align-self: left;
+        }
+    }
+
+    .address-picker-container {
+        max-width: 230px;
+    }
+
+    .material-icons {
+        color: $primary-brand-color;
+        text-align: center;
+        position: relative;
+        font-size: 1.2em;
+        top: 0px;
+        left: 0px;
+    }
+
+    .non-editable {
+        button {
+            display: flex;
+            justify-content: flex-end;
+            max-width: 280px;
+            padding-bottom: 20px;
+            position: absolute;
+            bottom: 0px;
+            right: 20px;
+        }
+    }
+
+    ul {
+        button {
+            position: relative;
+            left: 0px;
+        }
+    }
+
+    section {
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+        position: relative;
+        margin-left: 0%;
+    }
+
+    h1 {
+        font-size: 1.75em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    h2,
+    h3,
+    p {
+        text-align: left;
+    }
+
+    label p {
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    h2.bold {
+        color: $font-color;
+        padding-left: 30px;
+        padding-bottom: 10px;
+    }
+
+    section>* {
+        margin-left: 10px;
+        margin-right: 10px;
+        min-width: 287px;
+        max-width: 287px;
+    }
+
+    h3.title {
+        width: 100%;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+
+    .form-row {
+        align-self: center;
+        flex-direction: column;
+
+        div:nth-child(2) {
+            top: 0px;
+            position: relative;
+        }
+    }
+
+    .form-row {
+        padding-bottom: 0px;
+    }
+
+    .form-row>* {
+        padding: 0 0px;
+    }
+
+    input:not([type="checkbox"]),
+    .select-field select {
+        width: 230px;
+        font-size: 1em;
+        height: 40px;
+        float: none;
+    }
+    .select-field select {
+        margin-left: 0px;
+    }
+    
+
+    input[type="date"] {
+        width: 230px;
+    }
+
+    .select-field {
+        align-self: center;
+        width: 230px;
+    }
+
+    .non-editable,
+    .editable-form {
+        width: 100%;
+        max-width: 515px;
+        left: 0px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background-color: $light-grey;
+        padding: 30px;
+        padding-bottom: 18px;
+    }
+
+    .current-address {
+        .editable-form {
+            margin-bottom: 20px !important;
+        }
+        .col-12 {
+            .select-field {
+              select{
+
+              }
+            }
+        }
+    }
+
+    .section-top {
+
+        .non-editable,
+        .editable-form {
+            height: 405px;
+        }
+
+        .personal-details {
+            .editable-form {
+                .details-form {
+                    height: 390px !important;
+                }
+
+                .form-row {
+                    top: 10px;
+                    position: relative;
+                }
+            }
+        }
+        .bank-account {
+            .editable-form {
+                .details-form {
+                    height: 370px !important;
+                }
+            }
+        }
+    }
+
+    .section-bottom {
+        .editable-form {
+            height: 100%;
+            margin-bottom: 0px;
+
+            .communication-preferences-box {
+                .box-preference {
+                    margin: 0px;
+                    padding: 0px;
+                }
+
+                button {
+                    margin-top: 30px;
+                }
+            }
+        }
+
+        .preference-edit {
+            .editable-form {
+                height: 470px;
+            }
+        }
+
+        .current-address {
+            .select-field:after {
+                top: 42px;
+            }
+
+            .editable-form {
+                p {
+                    span {
+                        text-align: left !important;
+                    }
+                }
+
+                button {
+                    margin-top: 40px !important;
+                }
+            }
+        }
+    }
+
+    .editable-form {
+        button {
+            margin: 9px;
+            margin-right: 0;
+        }
+    }
+
+    label {
+        text-align: left;
+        span {
+            margin-bottom: 20px;
+        }
+        input {
+            -webkit-appearance: radio;
+            width: 16px !important;
+            height: 16px !important;
+        }
+    }
+
+    .select-field select {
+        width: 100%;
+        margin-bottom: 0px;
+    }
+
+    .material-icons.address-field-search-icon {
+        width: 16px;
+        height: 16px;
+        left: 90px;
+        top: 25px;
+        color: $font-color;
+    }
+
+    .update-adress-form {
+        max-width: 100%;
+    }
+
+    .current-address {
+        height: 100%;
+
+        .non-editable {
+            height: 405px !important;
+        }
+    }
+
+    .preference-contact,
+    .preference-topics {
+        margin-top: 20px;
+
+        span {
+            vertical-align: super;
+            padding-left: 5px;
+        }
+
+        p {
+            text-align: left;
+        }
+    }
+
+    p.bold {
+        line-height: 1.7;
+    }
+
+    .preference-edit {
+        .non-editable {
+            height: 405px !important;
+        }
+
+        margin-bottom: 40px;
+    }
+
+    .select-field:after {
+        top: 42px;
+    }
+
+    .bank-account {
+        .editable-form {
+            button {
+                margin-bottom: 20px;
+            }
+
+            .form-row {
+                padding-bottom: 135px;
+            }
+        }
+
+        article {
+            margin-bottom: 26px;
+        }
+    }
+    .email-account {
+        margin-left: 10px;
+        .non-editable {
+            max-width: 600px;
+            button {
+                padding-bottom: 5px;
+                margin-bottom: 40px;
+                right: 25px;
+            }
+        }
+        h1 {
+            position: absolute;
+        }
+        .material-icons {
+                top: -15px;
+        }
+        .button.secondary-small {
+            justify-content: center;
+            right: 16px;
+        }
+        button {
+            min-width: 145px;
+            justify-content: center;
+        }
+        .resend-msg {
+            p {
+                text-align: center;
+            }
+            max-width: max-content;
+            display:flex;
+            margin-bottom: 70px;
+            align-self: center;
+            .button.secondary-small {
+                right: unset;
+            }
+        }
+    }
+}
+
+@media #{$tablet} {
+    .my-account-screen {
+        height: 100%;
+        max-width: 300px;
+        margin-top: -25px;
+        margin-right: 0px;
+        margin-bottom: 100px;
+
+        .account-container {
+            border: 1px solid #ddd;
+            padding: 0;
+        }
+
+        section {
+            top: 0px;
+            flex-direction: column;
+            height: 100%;
+            margin-left: 0%;
+            margin-top: 20px;
+
+        }
+
+        h1 {
+            font-size: 1.5em;
+            font-weight: 300;
+            margin-bottom: 30px !important;
+        }
+
+        h2 {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+
+            &.bold {
+                padding-left: 30px;
+                padding-bottom: 0px;
+            }
+        }
+
+        h3.title {
+            width: 100%;
+        }
+
+        form {
+            width: 100%;
+        }
+
+        section>* {
+            margin-left: 0px;
+            margin-right: 0px;
+            min-width: 100%;
+            max-width: 100%;
+        }
+
+        .material-icons {
+            left: 0px;
+        }
+
+        .current-address {
+            position: relative;
+            top: 0px;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+
+            .address-status {
+                flex-direction: column;
+                width: 100%;
+
+                .date-field {
+                    label {
+                        display: inline-block;
+                        text-align: left;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .bank-account {
+            position: relative;
+            margin-top: 20px;
+
+            .editable-form {
+                button {
+                    margin-bottom: 40px;
+                }
+            }
+        }
+
+        label {
+            text-align: left;
+        }
+
+        .update-adress-form {
+            article {
+                left: 0px;
+            }
+        }
+
+        .preference-contact,
+        .preference-topics {
+            p {
+                text-align: left;
+            }
+        }
+
+        .form-row {
+            align-self: center;
+
+            div:nth-child(2) {
+                top: 0px;
+            }
+        }
+
+        .address-item-container,
+        .update-adress-form {
+            max-width: 100%;
+        }
+
+        .non-editable,
+        .editable-form {
+            .blocks {
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+        }
+
+        .section-top {
+            .personal-details {
+                .non-editable {
+                    height: 350px;
+                }
+            }
+
+            .bank-account {
+                .non-editable {
+                    height: 305px;
+                }
+
+                .editable-form {
+                    margin-top: 0px;
+                    height: 305px;
+
+                    .form-row {
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+        }
+
+        .section-bottom {
+
+            .non-editable,
+            .editable-form {
+                height: 100%;
+            }
+
+            .current-address {
+                .select-field:after {
+                    top: 42px;
+                }
+
+                .editable-form {
+                    button {
+                        margin-top: 40px !important;
+                    }
+                }
+            }
+        }
+
+        .preference-edit {
+            margin-top: 20px;
+            margin-bottom: 0px;
+        }
+        .email-account {
+            margin-left: 0px;
+            position: relative;
+            margin-top: 20px;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            .button.secondary-small {
+                justify-content: center;
+                margin-bottom: 17px;
+            }
+            h1{
+                font-size: 1.75em;
+                line-height: 1em;
+                font-weight: 700;
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+  "response": {
+    "next_action": "waiting_room",
+    "data": {
+      "form_data": {},
+      "page_data": {
+        "poll_url": "/get/waitingRoom/status.json",
+        "completed_pages": []
+      },
+      "ref_data": {}
+    },
+    "read_only": false,
+    "user_authenticated": false,
+    "errors": {
+      "form_validation": {
+        "form_error": [],
+        "form_fields": {}
+      }
+    }
+  },
+  "status_code": 200,
+  "csrf_token": "JTPJ3puKT0eWARwvSuvTsAxpkr1IK9xuezNKa7e2XW0I64Q5Pvu0go54TH7BivYl"
+}

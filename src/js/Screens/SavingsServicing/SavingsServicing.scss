@@ -1,0 +1,65 @@
+// SASS Variables
+@import "src/scss/base/colors";
+@import "src/scss/base/mediaqueries";
+
+.savings-servicing {
+    .my-account-screen {
+        .address-picker-container {
+            width: 300px;
+        }
+
+        .section-top {
+            .bank-account {
+                .details-form {
+                    margin-top: 16px!important;
+                }
+            }
+        }
+    }
+}
+
+@media #{$tablet} {
+    .savings-servicing {
+
+        .bottom-open li:first-child,
+        .bottom-close li:first-child {
+            display: block;
+        }
+
+        .desktop-only {
+            .topbar-navigation-items {
+                li:first-child {
+                    display: none !important;
+                }
+
+                li {
+                    display: none;
+                }
+
+                li:last-child {
+                    display: block;
+                }
+            }
+
+            .topbar-navigation-item:last-child {
+                height: 30px !important;
+            }
+        }
+
+        .topbar-navigation-item {
+            height: 40px !important;
+
+            button {
+                color: #707070;
+                font-size: 1em;
+                font-family: 'Pt sans';
+                font-weight: 700;
+            }
+
+            a:hover .bar .bar-timeline {
+                width: 70px;
+            }
+        }
+    }
+
+}

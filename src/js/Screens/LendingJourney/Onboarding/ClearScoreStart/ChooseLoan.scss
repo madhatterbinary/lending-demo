@@ -1,0 +1,44 @@
+// SASS Variables
+@import 'src/scss/base/colors';
+@import 'src/scss/base/mediaqueries';
+
+.loan-edit-screen {
+    padding-top: 0;
+    width: 100%;
+
+    h3 {
+        &.footer {
+            margin: 0;
+        }
+    }
+
+    .loan-slider {
+        padding-bottom: 35px;
+        width: 50%;
+    }
+
+    .update-cancel-buttons > * {
+        margin: 10px;
+    }
+}
+
+@media #{$tablet} {
+    .main-container {
+        padding-bottom: 0 !important;
+    }
+
+    .loan-edit-screen {
+        .loan-slider {
+            width: 85%;
+        }
+
+        .loan-buttons {
+            flex-direction: column;
+        }
+
+        .loan-buttons > * {
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+    }
+}

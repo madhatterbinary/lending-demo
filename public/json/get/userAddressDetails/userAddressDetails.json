@@ -1,0 +1,45 @@
+{
+  "response": {
+    "next_action": null,
+    "data": {
+      "form_data": {
+        "addresses": [
+          {
+            "address_type": "Current",
+            "building": "349",
+            "line_1": "IDVERIFIER ST",
+            "line_2": "",
+            "post_town": "ELY",
+            "postcode": "CB6 2AG",
+            "move_in_date": "2000-01-01",
+            "move_out_date": "2017-12-01",
+            "residential_status": null,
+            "ptcabs": 28030098305
+          }
+        ]
+      },
+      "page_data": {
+        "completed_pages": ["borrowing_details", "personal_details"],
+        "current_step": "contact_details"
+      },
+      "ref_data": {
+        "residential_status": [
+          { "id": 2, "value": "Homeowner" },
+          { "id": 3, "value": "Private Tenant" },
+          { "id": 4, "value": "Living with Parents" },
+          { "id": 5, "value": "Council tenant" }
+        ]
+      }
+    },
+    "read_only": false,
+    "user_authenticated": false,
+    "errors": {
+      "form_validation": {
+        "form_error": [],
+        "form_fields": {}
+      }
+    }
+  },
+  "status_code": 200,
+  "csrf_token": "nW1r724hkUA18FosCX7tHLTXxDnUQ5T9wMIpFRblwwtUkVekOYKKeOe0VnrFe0y2"
+}

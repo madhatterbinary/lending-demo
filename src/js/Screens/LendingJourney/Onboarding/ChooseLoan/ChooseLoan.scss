@@ -1,0 +1,94 @@
+// SASS Variables
+@import 'src/scss/base/colors.scss';
+@import 'src/scss/base/mediaqueries.scss';
+
+.loan-edit-screen {
+    padding-top: 0;
+    width: 100%;
+
+    h3 {
+        max-width: 600px;
+
+        &.footer {
+            margin: 0;
+        }
+    }
+
+    .loan-slider {
+        padding-bottom: 35px;
+        width: 50%;
+    }
+
+    .update-cancel-buttons>* {
+        margin: 10px;
+    }
+
+    article {
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+    }
+}
+
+@media #{$tablet} {
+    .loan-edit-screen {
+        .loan-slider {
+            width: 85%;
+        }
+        h3 {
+            width: 90vw!important;
+        }
+        .form-container {
+            padding-top: 0px!important;
+        }
+
+        .loan-buttons {
+            flex-direction: column;
+        }
+
+        .loan-buttons>* {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .primary-color-stripe-content {
+            .stripe-container {
+                flex-direction: column !important;
+            }
+        }
+
+        .primary-color-stripe.odd-stripe {
+            .stripe-container {
+                flex-direction: column !important;
+            }
+            .loan-buttons {
+                article:first-child {
+                    display: block!important;
+                }
+            }
+            h1 {
+               margin-top: 35px;
+               line-height: 24px;
+            }
+
+        }
+
+        .edit-loan {
+            display: none !important;
+        }
+
+        article {
+            padding-left: 10px !important;
+            padding-right: 10px !important;
+        }
+
+        .choose-loan-form {
+            .form-container {
+                padding-top: 0;
+
+                h3 {
+                    width: 90vw;
+                }
+            }
+        }
+    }
+}

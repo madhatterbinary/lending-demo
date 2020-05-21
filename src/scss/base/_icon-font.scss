@@ -1,0 +1,157 @@
+@font-face {
+    font-family: $icon-yf;
+    font-style: normal;
+    font-weight: normal;
+    src: url('/fonts/icon-yf/icon-yf.woff?82521214') format('woff');
+}
+
+
+[class^='icon-yf'],
+[class*=' icon-yf'] {
+    &::before {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        display: inline-block;
+        font-family: $icon-yf;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        speak: none;
+        text-align: center;
+        text-decoration: inherit;
+        text-transform: none;
+        width: 1em;
+    }
+}
+
+.icon-yf-check:before {
+    content: '\e800';
+}
+
+.icon-yf-employees:before {
+    content: '\e801';
+}
+
+.icon-yf-x:before {
+    content: '\e802';
+}
+
+.icon-yf-person-management:before {
+    content: '\e806';
+}
+
+.icon-yf-home:before {
+    content: '\e80b';
+}
+
+.icon-yf-legal-entity:before {
+    content: '\e80c';
+}
+
+.icon-yf-profiles:before {
+    content: '\e80d';
+}
+
+.icon-yf-loan-products:before {
+    content: '\e80e';
+}
+
+.icon-yf-documentation:before {
+    content: '\e810';
+}
+
+.icon-yf-event-defintion:before {
+    content: '\e811';
+}
+
+.icon-yf-general-definition:before {
+    content: '\e812';
+}
+
+.icon-yf-pricing-and-calculation:before {
+    content: '\e813';
+}
+
+.icon-yf-product-control:before {
+    content: '\e814';
+}
+
+.icon-yf-product-economics:before {
+    content: '\e815';
+}
+
+.icon-yf-rate-table:before {
+    content: '\e816';
+}
+
+.icon-yf-contact:before {
+    content: '\e817';
+}
+
+.icon-yf-interest-amount:before {
+    content: '\e819';
+}
+
+.icon-yf-next-payment:before {
+    content: '\e81b';
+}
+
+.icon-yf-personal-details:before {
+    content: '\e81c';
+}
+
+.icon-yf-alert:before {
+    content: '\e81f';
+}
+
+.icon-yf-work-in-progress:before {
+    content: '\e820';
+}
+
+.icon-yf-notification:before {
+    content: '\e821';
+}
+
+.icon-yf-plus:before {
+    content: '\e822';
+}
+
+.icon-yf-duplicate:before {
+    content: '\e826';
+}
+
+.icon-yf-error:before {
+    content: '\e827';
+}
+
+.icon-yf-save-edit:before {
+    content: '\e828';
+}
+
+.icon-yf-portfolio:before {
+    content: '\e829';
+}
+
+.icon-yf-trash-icon:before {
+    content: '\e82a';
+}
+
+.icon-yf-referrals:before {
+    content: '\e82c';
+}
+
+.icon-yf-funding-bucket:before {
+    content: '\e82e';
+}
+
+.icon-yf-lock:before {
+    content: '\e82f';
+}
+
+.icon-yf-validation:before {
+    content: '\e831';
+}
+
+.icon-yf-memorable-question:before {
+    content: '\e832';
+}

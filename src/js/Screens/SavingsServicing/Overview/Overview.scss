@@ -1,0 +1,118 @@
+// SASS Variables
+@import "src/scss/base/colors";
+@import "src/scss/base/mediaqueries";
+
+.savings-servicing-overview {
+    display: flex;
+    flex-direction: column;
+
+    .responsive-table {
+        align-self: center;
+        th, td {
+            padding: 15px;
+        }
+    }
+
+    .primary-color-stripe {
+        .primary-color-stripe-content {
+            width: 70% !important;
+            border: 1px solid $white;
+            margin-bottom: 40px;
+        }
+    }
+
+    .numberCircle {
+        border-radius: 50%;
+        width: 66px;
+        height: 66px;
+        padding: 16px;
+        background: #fff;
+        color: $primary-brand-color;
+        text-align: center;
+        font-size: 2em;
+        font-weight: 700;
+    }
+
+    .material-icons {
+        color: $primary-brand-color;
+    }
+
+    .textbox-container:last-child {
+        position: relative;
+        margin-bottom: 40px;
+    }
+
+    h2,
+    .title.loan-deadline {
+        color: $primary-brand-color;
+    }
+
+    h4 {
+        &.title {
+            text-align: center;
+            margin-bottom: 0;
+            margin-top: 40px;
+        }
+    }
+}
+.infochart {
+    justify-content: space-between;
+    margin-left: 0px;
+}
+.infochart.maturity {
+    justify-content: space-around;
+    margin-left: -58px;
+}
+th, td, tr {
+    color:#707070;  
+}
+.table td:first-child, .table th:first-child {
+    padding-left:0!important;
+    
+}
+
+@media #{$tablet} {
+    .savings-servicing-overview {
+
+        h1,
+        h3,
+        h4 {
+            width: 70% !important;
+            text-align: center !important;
+            align-self: center;
+        }
+
+        p {
+            width: 70vw !important;
+            align-self: center;
+        }
+
+        .responsive-table {
+            width: 276px !important;
+        }
+
+        .primary-color-stripe {
+            width: 100% !important;
+
+            .primary-color-stripe-content {
+                flex-direction: column !important;
+                width: 70% !important;
+            }
+        }
+
+        .textbox-container {
+            .textbox.visible {
+                width: 70% !important;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                max-height: 850px !important;
+                height: 100%!important;
+            }
+            .textbox.visible >* {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

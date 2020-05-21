@@ -1,0 +1,16 @@
+// SASS Variables
+@import 'src/scss/base/colors';
+@import 'src/scss/base/mediaqueries';
+
+.info-screen {
+    display: flex;
+    max-width: 500px;
+    background: whitesmoke; 
+    align-self: center;  
+    flex-direction: column;
+    h1 {
+        font-size: 1.2em;
+        font-weight: 300;
+        color:$warning-color;
+    }
+}

@@ -1,0 +1,259 @@
+// Typography
+// TODO: default alignments: should be standard
+// TODO: alignment classes across all typography elements
+// TODO:
+body {
+    color: $font-color;
+    font-family: 'Pt sans';
+    font-size: 1em;
+    font-variant: normal;
+    font-weight: 400;
+}
+
+h1 {
+    // TODO: missmatched
+    align-self: center;
+    font-size: 1.75em;
+    font-weight: 700;
+    margin-bottom: 5px;
+    margin-top: 0;
+    overflow: visible !important;
+    text-align: center;
+
+    &.large {
+        // TODO: this wrong
+        font-size: 2em;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &.title {
+        // TODO: this is wrong
+        color: $font-color;
+        font-size: 1.5em;
+        font-weight: 700;
+
+        &.white {
+            color: $white;
+        }
+    }
+
+    &.title {
+
+        // TODO: this is wrong
+        &.secondary {
+            color: $secondary-brand-color;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+h2 {
+    color: $font-color;
+    font-size: 1.8em;
+    font-weight: 400;
+    margin-bottom: 10px;
+
+    &.bold {
+        font-weight: 700;
+        font-size: 1.25em; // TODO: this shouldnt be nested here
+
+        &.warning {
+            color: $warning-color;
+        }
+    }
+
+    &.title {
+        font-size: 1.2em;
+        font-weight: 700;
+    }
+}
+
+h3 {
+    align-self: center;
+    color: $font-color;
+    font-size: 1.1em;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 10px;
+    margin-top: 15px; // WHY
+    max-width: 600px;
+    text-align: center; //WHY
+    width: 50%;
+
+    &.title {
+        font-weight: 700;
+        padding-bottom: 20px;
+        padding-top: 30px; // width: 70%;
+    }
+
+    &.footer.title {
+        font-size: 1em;
+        font-weight: 700;
+        align-self: center;
+    }
+
+    &.footer {
+        font-size: 1em;
+        font-weight: 400;
+        padding-bottom: 0;
+        padding-top: 0;
+        width: 100%;
+    }
+
+    &.title.odd-width {
+        width: none !important;
+    }
+}
+
+h4 {
+    font-size: 1.1em;
+    font-weight: 400;
+    margin-bottom: 10px;
+
+    &.title {
+        font-size: 1.3em;
+        font-weight: 700;
+        line-height: 24px;
+        margin-bottom: 60px;
+        text-align: left;
+        &.white {
+            color:$white;
+        }
+    }
+}
+
+h1,
+h2,
+h4 {
+    line-height: 1em;
+}
+
+//Why is this here? Should we be giving a speific height to all h1, h2 and h4?
+p {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1em;
+    margin-bottom: 8px;
+
+    &.small {
+        font-size: .8;
+        line-height: 16px;
+    }
+
+    &.bold {
+        font-weight: 700;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+span,
+label {
+    color: $font-color;
+    text-align: center;
+
+    &.white {
+        color: $white !important;
+    }
+
+    &.grey {
+        color: $font-color !important;
+
+        &.table {
+            margin-bottom: 0;
+        }
+    }
+
+    &.brand-primary {
+        color: $primary-brand-color;
+    }
+
+    &.brand-secondary {
+        color: $secondary-brand-color;
+    }
+
+    &.success {
+        color: $success-color !important;
+    }
+
+    &.error {
+        color: $error-color !important;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+// TODO: this is an input field, should be in input
+input:not([type='checkbox']) {
+    font-family: 'Pt sans';
+    font-size: 1.2em;
+}
+
+@media #{$tablet} {
+    h4 {
+        font-size: .9em;
+    }
+
+    h3 {
+        align-self: center;
+        line-height: 25px;
+        margin-bottom: 10px;
+        margin-top: 16px;
+        overflow: visible;
+        width: 90%;
+    }
+
+    h1 {
+        line-height: 55px;
+        margin-bottom: 70px;
+        margin-top: 0;
+        white-space: inherit;
+        font-size: 1.75em;
+        font-weight: 300;
+
+        &.title {
+            &.secondary {
+                margin-bottom: 70px;
+            }
+        }
+
+        &.odd {
+            margin-bottom: 0;
+        }
+    }
+
+    h2 {
+        line-height: 30px;
+        margin-bottom: 30px;
+        overflow: visible;
+        white-space: inherit;
+        width: 100%;
+
+        &.title {
+            font-size: 1.3125em;
+            font-weight: 300;
+        }
+
+        &.bold {
+            font-size: 1.3125em;
+        }
+    }
+
+    p {
+        max-width: 320px;
+    }
+}

@@ -1,0 +1,22 @@
+// SASS Variables
+@import 'src/scss/base/colors';
+@import 'src/scss/base/mediaqueries';
+
+.personal-page-screen {
+    align-items: center;
+    flex-direction: column;
+
+    h3 {
+        margin: 40px 0;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media #{$tablet} {
+    .personal-page-screen {
+        &.odd {
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+{
+  "response": {
+    "next_action": null,
+    "data": {
+      "form_data": {
+        "loan_amount": 1000,
+        "term_in_months": 12
+      },
+      "page_data": {
+        "completed_pages": [],
+        "current_step": null
+      },
+      "ref_data": {
+        "loan_amount": {
+          "min_value": 1000,
+          "max_value": 12000
+        },
+        "term_in_months": {
+          "min_value": 12,
+          "max_value": 60
+        }
+      }
+    },
+    "read_only": false,
+    "user_authenticated": false,
+    "errors": {
+      "form_validation": {
+        "form_error": [],
+        "form_fields": {}
+      }
+    }
+  },
+  "status_code": 200,
+  "csrf_token": "BixJwlytmPYdSOUvo0O3ql3fwfyIJ2NlK8eH4aFxyrR644KnA1rkXooiUZCt7Xse"
+}

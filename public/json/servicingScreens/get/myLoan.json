@@ -1,0 +1,121 @@
+{
+  "data": {
+    "loan_amount": "15000",
+    "loan_rate": "19.9",
+    "agreed_annuity": "339.39",
+    "total_payable": "16000",
+    "current_balance": "14250",
+    "terms": {
+      "original_term": "36 months",
+      "agreement_date": "12 May 2018",
+      "account_number": "8232223523"
+    },
+    "form_data": {
+      "additional_payment": null,
+      "reduce_loan_term": false,
+      "reduce_monthly_payment": false,
+      "my_account": {
+        "personal_details": {
+          "title": "Mr.",
+          "first_name": "Robert",
+          "last_name": "Smith",
+          "data_of_birth": "12/09/1978",
+          "email": "robert@gmail.com",
+          "phone": "0758449782"
+        }
+      },
+      "address": {
+        "house_number": "639",
+        "street": "Park Lane",
+        "city_town": "London",
+        "county": "Greater London",
+        "postcode": "SW1H 1PN",
+        "moved_in_date": "12/11/2012"
+      },
+      "bank_account": {
+        "sort_code": "22-09-45",
+        "account_number": "00012319"
+      },
+      "contact_us": {
+        "full_name": "Rubens Rodriguez",
+        "email_address": "rubens@gmail.com",
+        "enquire_type": "2",
+        "feedback_message": "How can I get the item delivered for Christmas?"
+      },
+      "tables": {
+        "monthly_statement": {
+          "columns": {
+            "text": "Your monthly statement",
+            "value": ""
+          },
+          "rows": [
+            {
+              "text": "Next payment date",
+              "value": "30 Nov 2018"
+            },
+            {
+              "text": "Loan amount",
+              "value": "167.50"
+            },
+            {
+              "text": "interest",
+              "value": "20.50"
+            },
+            {
+              "text": "Amount due",
+              "value": "187"
+            }
+          ]
+        },
+        "previous_payments": {
+          "columns": {
+            "text": "Previous payments",
+            "value": ""
+          },
+          "rows": [
+            {
+              "text": "Payment date",
+              "value": "30 Nov 2018"
+            },
+            {
+              "text": "Amount paid",
+              "value": "£167.50"
+            },
+            {
+              "text": "Payment date",
+              "value": "14 Dec 2017"
+            },
+            {
+              "text": "Amount paid",
+              "value": "£187.50"
+            },
+            {
+              "text": "Payment date",
+              "value": "24 Jan 2016"
+            },
+            {
+              "text": "Amount paid",
+              "value": "£387.30"
+            },
+            {
+              "text": "Payment date",
+              "value": "30 Jul 2015"
+            },
+            {
+              "text": "Amount paid",
+              "value": "£87.50"
+            },
+            {
+              "text": "Payment date",
+              "value": "12 Aug 2014"
+            },
+            {
+              "text": "Amount paid",
+              "value": "£230.00"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

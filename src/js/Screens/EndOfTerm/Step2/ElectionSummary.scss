@@ -1,0 +1,46 @@
+// SASS Variables
+@import 'src/scss/base/colors';
+@import 'src/scss/base/mediaqueries';
+
+.expenses-info-screen {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+    position: relative;
+
+    .expenses-form {
+        padding-top: 55px !important;
+    }
+
+    .footnote-header {
+        font-weight: 700;
+    }
+    .select-field:after {
+        right: 15px;
+        top: 46px;
+    }
+}
+.savings-servicing {
+    p {
+        margin-bottom: 20px;
+    }
+}
+
+@media #{$tablet} {
+    .expenses-info-screen {
+        span {
+            line-height: 1.5;
+        }
+    }
+
+    .loan-features {
+        margin-bottom: 125px !important;
+        margin-top: 0 !important;
+    }
+
+    .expenses-form {
+        position: relative;
+        width: 320px;
+    }
+}

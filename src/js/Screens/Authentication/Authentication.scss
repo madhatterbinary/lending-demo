@@ -1,0 +1,51 @@
+// SASS Variables
+@import 'src/scss/base/colors';
+@import 'src/scss/base/mediaqueries';
+
+.auth-screen {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    .login-register-button {
+        margin-top: 40px;
+        width: 320px;
+    }
+}
+
+.auth0-lock.auth0-lock .auth0-lock-submit .auth0-label-submit {
+    color: $white !important;
+}
+
+.auth0-lock.auth0-lock .auth0-lock-cred-pane {
+    min-width: 300px;
+}
+
+.auth0-lock-header-logo {
+    height: auto !important;
+    width: 50% !important;
+}
+
+.auth0-lock.auth0-lock .auth0-lock-overlay,
+.auth0-lock.auth0-lock.auth0-lock-opened .auth0-lock-overlay {
+    background: $overlay-color-rgba !important;
+}
+
+.auth0-lock.auth0-lock.auth0-lock-opened .auth0-lock-widget {
+    border: 1px solid $light-grey;
+    box-shadow: 0 0 40px 4px $shadow-rgba !important;
+}
+
+
+@media #{$tablet} {
+    .auth-screen {
+        h1 {
+            width: 88%;
+            margin-bottom: 0px!important;
+        }
+
+        .login-register-button {
+            width: 250px;
+        }
+    }
+}

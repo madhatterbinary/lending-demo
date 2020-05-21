@@ -1,0 +1,12 @@
+{
+    "api_response": {
+        "data": {
+            "gotoPersonalPage": {
+                "dynamic_data": {
+                    "url": "Personal Page URL"
+                }
+            },
+            "redirectToNext": "/yourloan/signyourdocuments"
+        }
+    }
+}

@@ -1,0 +1,25 @@
+// SASS Variables
+@import 'src/scss/base/colors';
+@import 'src/scss/base/mediaqueries';
+
+@media #{$tablet} {
+    .primary-color-stripe {
+        &.loan-panel {
+            bottom: 0;
+            height: 150px;
+            position: fixed!important;
+            top: auto;
+            z-index: 999;
+
+            .primary-color-stripe-content {
+                flex-direction: row;
+                padding-right: 20px;
+
+                article {
+                    padding-bottom: 30px;
+                    padding-top: 0;
+                }
+            }
+        }
+    }
+}

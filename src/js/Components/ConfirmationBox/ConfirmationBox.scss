@@ -1,0 +1,64 @@
+
+
+.infobox{
+    position:relative;
+    display:block;
+    .container.m-0.p-0 {
+        // max-width: 310px;
+    }
+    .col.ml-3 {
+        position: absolute;
+        margin-top: 110px;
+        // width: 353px;
+        // padding-left: 35px!important;
+        // padding-right: 35px!important;
+        h3, p {
+            text-align: center;
+        }
+        padding-right: 35px;
+        padding-left: 35px;
+    }
+    img {
+        // width: 351px;
+        height: auto;
+        margin-top: 25px;
+    }
+    .col.text-right {
+        display: flex;
+        flex-direction: column;
+    }
+    .text-right.closed-loan {
+        text-align: center !important;
+        margin-top: -180px;
+    }
+}
+
+.red-box.info {
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    height: 243px;
+    margin-top: 50px;
+    width: 794px;
+    .btn {
+        margin-right: 0!important;
+    }
+}
+.link.congrats {
+    text-align: center;
+    margin: -90px;
+}
+.btn.btn-primary.congrats {
+    margin:0;
+}
+.continue-maturity{
+    .infobox {
+        .row {
+            margin-top: -86px;
+            .text-right{
+                text-align: center !important;
+            }
+        }
+    }
+}
+

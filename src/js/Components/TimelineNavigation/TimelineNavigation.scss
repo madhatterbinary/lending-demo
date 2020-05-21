@@ -1,0 +1,136 @@
+// SASS Variables
+@import 'src/scss/base/colors.scss';
+@import 'src/scss/base/mediaqueries.scss';
+
+.timeline-navigation-items {
+    align-items: center;
+    align-self: center;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    list-style: none;
+    padding-bottom: 25px;
+    position: relative;
+
+    .timeline-navigation-item {
+        article {
+            color: $font-color;
+            display: inline-block;
+
+            .title {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                margin-bottom: 10px;
+                position: relative;
+                width: 100%;
+
+                img {
+                    margin-right: 0;
+                }
+            }
+
+            .bar {
+                max-width: 165px;
+                width: 100%;
+
+                &::before {
+                    left: 43px;
+                    position: absolute;
+                    top: 20px;
+                }
+
+                .bar-timeline {
+                    background-color: $background-grey;
+                    background-image: linear-gradient(to right, $background-grey, $font-color);
+                    border-radius: 10px;
+                    height: 8px;
+                    width: 165px;
+                }
+            }
+
+            &.completed,
+            &.active {
+                color: $primary-brand-color;
+                font-weight: 700;
+
+                .bar {
+                    .bar-timeline {
+                        background-image: linear-gradient(to right, $primary-brand-color, $secondary-brand-color-dark);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.timeline-navigation-items > * {
+    padding-left: 50px;
+    padding-right: 50px;
+    position: relative;
+}
+
+@media #{$tablet} {
+    .timeline-navigation-items {
+        flex-flow: row;
+        padding-top: 30px;
+
+        .timeline-navigation-item {
+            article {
+                .title {
+                    img {
+                        margin-right: 10px;
+                    }
+                }
+
+                .bar {
+                    max-width: 65px;
+
+                    .bar-timeline {
+                        width: 65px;
+                    }
+                }
+            }
+
+            a,
+            article {
+                .completed {
+                    bottom: 12px !important;
+                    position: relative;
+                }
+            }
+        }
+    }
+
+    .timeline-navigation-items > * {
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+
+    .timeline-navigation-items .timeline-navigation-item a article .bar .bar-timeline {
+        width: 70px;
+    }
+
+    .timeline-navigation-items .timeline-navigation-item a.completed article .bar:before {
+        left: 10px;
+        position: absolute;
+        top: 20px;
+    }
+
+    .timeline-navigation-items .timeline-navigation-item a article {
+        .title {
+            flex-direction: column;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+            margin-right: 0;
+
+            img {
+                align-self: center;
+                height: 16px;
+                margin-bottom: 10px;
+                margin-right: 0;
+                width: 16px;
+            }
+        }
+    }
+}

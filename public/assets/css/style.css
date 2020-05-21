@@ -1,0 +1,21 @@
+.address {
+    color: #707070;
+}
+
+section {
+    color: #707070;
+}
+
+section img {
+    padding-bottom: 50px;
+}
+
+body {
+    padding: 50px;
+    font-size: 1em;
+    background: white;
+}
+
+h1 {
+    overflow: visible!important;
+}

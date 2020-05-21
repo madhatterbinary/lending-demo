@@ -1,0 +1,8 @@
+{
+    "api_response": {
+        "data": {
+            "generalError": {},
+            "redirectToNext": "/"
+        }
+    }
+}

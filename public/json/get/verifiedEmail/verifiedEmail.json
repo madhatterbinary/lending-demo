@@ -1,0 +1,29 @@
+{
+  "response": {
+    "next_action": null,
+    "data": {
+      "form_data": {},
+      "page_data": {
+        "completed_pages": [],
+        "current_step": null,
+        "AUTH0_CLIENT_ID": "cmKzqTIOUw3SVhPuGmXzyAm2TPpi01nO",
+        "AUTH0_DOMAIN": "yobota.eu.auth0.com",
+        "AUTH0_CONNECTION": "yobodjang",
+        "AUTH0_LINK_ACCOUNT_CALLBACK_URL": "http://192.168.1.23:8000/link_account/callback/",
+        "AUTH0_CUST_CALLBACK_URL": "http://192.168.1.23:8000/lending/callback/",
+        "AUTH0_CUST_SIGNUP_CALLBACK_URL": "http://192.168.1.23:8000/lending/callback/signup/"
+      },
+      "ref_data": {}
+    },
+    "read_only": false,
+    "user_authenticated": false,
+    "errors": {
+      "form_validation": {
+        "form_error": [],
+        "form_fields": {}
+      }
+    }
+  },
+  "status_code": 200,
+  "csrf_token": "JTPJ3puKT0eWARwvSuvTsAxpkr1IK9xuezNKa7e2XW0I64Q5Pvu0go54TH7BivYl"
+}

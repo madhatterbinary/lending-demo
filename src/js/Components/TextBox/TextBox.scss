@@ -1,0 +1,30 @@
+// SASS Variables
+@import 'src/scss/base/colors.scss';
+@import 'src/scss/base/mediaqueries.scss';
+.textbox-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    .textbox {
+      max-height: 0px;
+      overflow: hidden;
+      transition: max-height 0.8s ease;
+      width: 620px;
+    }
+    .textbox.visible {
+      max-height: 100px;
+      width: 620px;
+    }
+}
+
+@media #{$tablet} {
+    .textbox-container {
+        .textbox {
+          width: 320px;
+        }
+        .textbox.visible {
+            max-height: 240px;
+            width: 270px;
+        } 
+    }
+}

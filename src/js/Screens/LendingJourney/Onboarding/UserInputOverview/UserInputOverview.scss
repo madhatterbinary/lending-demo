@@ -1,0 +1,49 @@
+
+// // SASS Variables
+// @import 'src/scss/base/colors.scss';
+// @import 'src/scss/base/mediaqueries.scss';
+
+// .direct-debit-mandate-screen {
+//     h1 {
+//         margin-top: 20px;
+//     }
+
+//     .primary-color-stripe-content {
+//         justify-content: space-between;
+//         max-width: 800px !important;
+//     }
+
+//     .loan-buttons {
+//         display: flex;
+//         flex-direction: row;
+//         padding-top: 40px;
+//     }
+// }
+
+// @media #{$tablet} {
+//     .direct-debit-mandate-screen {
+//         h1 {
+//             margin-bottom: 70px;
+//             margin-top: 0;
+//         }
+
+//         .loan-buttons {
+//             flex-direction: column;
+
+//             & > * {
+//                 margin: 20px;
+//             }
+
+//             padding-top: 0;
+//         }
+
+//         .primary-color-stripe {
+//             top: 0;
+//             width: 100vw !important;
+//         }
+
+//         .primary-color-stripe-content {
+//             flex-direction: column !important;
+//         }
+//     }
+// }

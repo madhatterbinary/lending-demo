@@ -1,0 +1,21 @@
+// SASS Variables
+@import 'src/scss/base/colors';
+@import 'src/scss/base/mediaqueries';
+
+.verify-email-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media #{$tablet} {
+    .verify-email-screen {
+        h1 {
+            width: 88%;
+        }
+
+        button {
+            width: 290px;
+        }
+    }
+}

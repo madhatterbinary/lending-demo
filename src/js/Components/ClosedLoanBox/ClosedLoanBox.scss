@@ -1,0 +1,36 @@
+
+
+.infobox{
+    position:relative;
+    display:block;
+    .container.m-0.p-0 {
+        max-width: 310px;
+    }
+    .col.ml-3 {
+        position: absolute;
+        margin-top: 90px;
+        width: 350px;
+        padding-left: 25px;
+        h3, p {
+            text-align: center;
+        }
+    }
+    img {
+        width: 420px;
+        height: auto;
+    }
+    .col.text-right {
+        display: flex;
+        flex-direction: column;
+    }
+   
+}
+
+.red-box.info {
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    .btn {
+        margin-right: 0!important;
+    }
+}

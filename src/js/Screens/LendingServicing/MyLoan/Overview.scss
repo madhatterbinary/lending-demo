@@ -1,0 +1,213 @@
+// SASS Variables
+@import 'src/scss/base/colors';
+@import 'src/scss/base/mediaqueries';
+
+.servicing-my-loan-screen {
+    display: flex;
+    flex-direction: column;
+    .terms-details {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .button.secondary-invert-color.disable-btn {
+        display: none;
+    }
+    .terms-details>* {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .slider-box {
+        align-self: center;
+        width: 45%;
+        .horizontal-slider-bar {
+            width: 100%;
+        }
+    }
+    button {
+        margin-bottom: 40px;
+    }
+    .slider-box {
+        position: relative;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        display: flex;
+        flex-direction: column;
+        .horizontal-slider-bar {
+            max-width: 600px;
+            align-self: center;
+            .rangeslider-horizontal {
+                .rangeslider__handle {
+                    border-color: transparent;
+                    border-radius: 0px;
+                    box-shadow: transparent;
+                    height: 0px;
+                    width: 0px;
+                    color: $background-grey;
+                    cursor: unset;
+                    background: transparent;
+                    background-color: transparent;
+                }
+                .rangeslider__label-item {
+                    &:first-child {
+                        padding-right: 50px;
+                    }
+                    &:last-child {
+                        padding-left: 10px;
+                    }
+                }
+                .rangeslider__handle-tooltip {
+                    display: inline-block !important;
+                    visibility: visible !important;
+                    top: -70px;
+                    width: 100px;
+                    height: 50px;
+                    background-color: $white;
+                    color: $primary-brand-color;
+                    border: 1px solid $primary-brand-color;
+                    background: $background-grey;
+                    span {
+                        color: $primary-brand-color;
+                    }
+                }
+                .rangeslider__handle-tooltip:after {
+                    border-top: 8px solid $primary-brand-color;
+                }
+            }
+        }
+    }
+    .slider-box .horizontal-slider-bar .rangeslider-horizontal .rangeslider__handle-tooltip {
+        left: 0px;
+    }
+    .material-icons {
+        font-size: 2em;
+        filter: invert(34%) sepia(81%) saturate(2840%) hue-rotate(332deg) brightness(95%) contrast(92%);
+    }
+    .primary-color-stripe {
+        .material-icons {
+            filter: unset;
+            color:$white;
+        }
+    }
+    .missed-payments {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+        border: 1px solid $primary-brand-color;
+        border-radius: 5px;
+        max-width: 790px;
+        align-self: center;
+        .missed-payment-text {
+            display: flex;
+            align-items: center;
+        }
+        .missed-payment-text>* {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        button {
+            margin-bottom: 15px;
+            margin-top: 15px;
+        }
+    }
+    .missed-payments>* {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .continue-journey-info {
+        display: flex;
+        max-width: 1000px;
+        background: whitesmoke;
+        flex-direction: column;
+        a {
+            color:$warning-color;
+        }
+        p, h1, h2, h3 {
+            text-align: left;
+            padding-right: 60px;
+        }
+        p {
+            font-size: 1.1em;
+        }
+        h1 {
+            margin-bottom: 30px; 
+            align-self: start;
+            &.info{
+                color:$warning-color!important;
+            } 
+        }
+        .continue-journey-info-content {
+            margin-left: 60px;
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            .info-header {
+                margin-top: 60px;
+                margin-bottom: 60px;
+            }
+            button {
+                align-self: flex-end;
+                margin-right: 95px;
+            }
+        }
+    }
+
+}
+
+@media #{$tablet} {
+    .servicing-my-loan-screen {
+        h1 {
+            margin-bottom: 50px;
+            line-height: 20px;
+        }
+        .terms-details {
+            flex-direction: column;
+        }
+        a {
+            margin-bottom: 40px;
+        }
+        button {
+            margin-bottom: 0;
+            bottom: 0;
+            right: 0;
+        }
+        .slider-box {
+            width: 80vw;
+            margin-top: 50px;
+            .horizontal-slider-bar {
+                width: 100%;
+            }
+        }
+        .rangeslider-horizontal .rangeslider__handle-tooltip:after {
+            left: 85%;
+        }
+        .slider-box .horizontal-slider-bar .rangeslider-horizontal .rangeslider__handle-tooltip {
+            left: -37px;
+        }
+        .slider-box .horizontal-slider-bar {
+            width: 100%;
+        }
+        &.left-side-tooltip {
+            position: relative;
+            .slider-box .horizontal-slider-bar .rangeslider-horizontal .rangeslider__handle-tooltip {
+                left: 40px;
+            }
+            .rangeslider-horizontal .rangeslider__handle-tooltip:after {
+                left: 9%;
+            }
+        }
+        article {
+            h1 {
+                max-width: 100% !important;
+            }
+        }
+        .primary-color-stripe {
+            margin-bottom: 70px !important;
+            width: 100%!important;
+        }
+        .primary-color-stripe-content {
+            flex-direction: column !important;
+            width: 100vw !important;
+        }
+    }
+}

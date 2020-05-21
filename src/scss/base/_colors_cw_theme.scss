@@ -1,0 +1,34 @@
+// Backgrounds & typography
+$white: #fff;
+$light-grey: #eee;
+$background-grey: #e5e5e5;
+$background-grey-hover: #d9dcd9;
+$font-color: #707070;
+// Button and font colors
+$success-color: #009933;
+// $success-color: #01d263;
+$success-color-hover: darken($success-color, 10);
+// $success-color-hover: darken($success-color, 15);
+$error-color: #b92424;
+$error-color-hover: darken($error-color, 8);
+$warning-color: #ffc107;
+// Brand colors
+$primary-brand-color: #002846;
+$secondary-brand-color: #00d264;
+$secondary-brand-color-dark: #01863f;
+$secondary-brand-color-light: #4d697e;
+$secondary-brand-color-lighter: #8094a3;
+$highlight-brand-color: #3b86ff;
+$primary-brand-color-hover: darken($primary-brand-color, 15);
+// Supporting colors
+$border-color: $secondary-brand-color;
+$border-color-light: #b4b4b4;
+// Shadows
+$light-shadow-rgba: rgba(0, 0, 0, .1);
+$shadow-rgba: rgba(0, 0, 0, .2);
+$overlay-color-rgba: rgba(255, 255, 255, .5);
+$transparent-brand-color: rgba(#df4456, .25);
+// $transparent-brand-color: rgba(#01d263, .25);
+// Color transitions
+$button-transition: background-color .2s ease;
+$card-transition: background-color .3s ease;

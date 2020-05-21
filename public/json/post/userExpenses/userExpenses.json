@@ -1,0 +1,84 @@
+{
+  "response": {
+    "next_action": "product_offer",
+    "data": {
+      "form_data": {
+        "employment_status": [
+          {
+            "id": 0,
+            "value": "FULLTIME"
+          },
+          {
+            "id": 1,
+            "value": "PARTTIME"
+          },
+          {
+            "id": 2,
+            "value": "SELFEMPLOYED"
+          },
+          {
+            "id": 3,
+            "value": "UNEMPLOYED"
+          },
+          {
+            "id": 4,
+            "value": "LONGTERMCONTRACTMORE6MONTHS"
+          },
+          {
+            "id": 5,
+            "value": "STUDENT"
+          },
+          {
+            "id": 6,
+            "value": "RETIRED"
+          },
+          {
+            "id": 7,
+            "value": "OTHER"
+          }
+        ],
+        "user_provided_income_amount": "10000.00",
+        "user_provided_tax_position": [
+          {
+            "id": 0,
+            "value": "Before tax"
+          },
+          {
+            "id": 1,
+            "value": "After tax"
+          }
+        ],
+        "user_provided_income_period": [
+          {
+            "id": 0,
+            "value": "Monthly"
+          },
+          {
+            "id": 1,
+            "value": "Yearly"
+          }
+        ],
+        "total_monthly_expenditure": "500.00"
+      },
+      "page_data": {
+        "completed_pages": [
+          "borrowing_details",
+          "personal_details",
+          "contact_details"
+        ],
+        "current_step": "credit_reference"
+      },
+      "ref_data": {}
+    },
+    "read_only": false,
+    "user_authenticated": false,
+    "errors": {
+      "form_validation": {
+        "form_error": [],
+        "form_fields": {}
+      }
+    }
+  },
+  "status_code": 200,
+  "csrf_token": "3doiGlfn6G0vJEpB2Bw94NijVhi1ur5dtvKLec0O8DLEcnzNkcsyVQ2Tu8lQtxqD"
+}

@@ -1,0 +1,37 @@
+// SASS Variables
+@import 'src/scss/base/colors';
+@import 'src/scss/base/mediaqueries';
+
+.savings-user-information-timeline {
+    .primary-color-stripe {
+        .stripe-container {
+            flex-direction: row;
+        }
+    }
+}
+
+
+@media #{$tablet} {
+    .savings-user-information-timeline {
+        .timeline-navigation-items {
+            padding-bottom: 0;
+        }
+
+        .primary-color-stripe {
+            width: 100%;
+
+            .stripe-container {
+                flex-direction: column;
+            }
+        }
+
+        .address-info-screen {
+            .addressForm {
+                button {
+                    top: 0px;
+                    margin-bottom: 50px;
+                }
+            }
+        }
+    }
+}

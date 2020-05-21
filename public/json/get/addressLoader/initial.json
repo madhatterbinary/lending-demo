@@ -1,0 +1,8 @@
+{
+	"status": "PENDING",
+	"redirect": null,
+	"tickets_pending": 0,
+	"tickets_failed": 0,
+	"tickets_succeeded": 0,
+	"consumer": "postcode_checker"
+}

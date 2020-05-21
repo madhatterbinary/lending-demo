@@ -1,0 +1,61 @@
+// SASS Variables
+@import "src/scss/base/colors.scss";
+@import 'src/scss/base/mediaqueries.scss';
+.topbar-navigation-item {
+  box-sizing: border-box;
+  margin: 0;
+  display: flex;
+  height: 100%;
+  width: auto;
+  padding-right: 0px;
+  align-items: center;
+}
+
+.topbar-navigation-item a {
+  color: $font-color;
+  text-decoration: none;
+  border: 0;
+  border-radius: 0px;
+  font-weight: bolder;
+  box-sizing: border-box;
+  display: block;
+  height: 40px;
+  width: 110px;
+  padding: 0px 0px;
+  text-align: center;
+  margin-left: 0px;
+}
+
+.topbar-navigation-item a:hover,
+.topbar-navigation-item a:active,
+.topbar-navigation-item a.active {
+  border: 0;
+  margin-left: 0px;
+  .bar {
+    .bar-timeline {
+      height: 4px;
+      border-radius: 10px;
+      margin: 5px 10px;
+      background-color: $primary-brand-color;
+    }
+  }
+}
+.topbar-navigation-item a:hover,
+.topbar-navigation-item a:active,
+.topbar-navigation-item a.active {
+    .material-icons {
+      filter: invert(31%) sepia(96%) saturate(1470%) hue-rotate(329deg) brightness(93%) contrast(96%);
+    }
+}
+
+.material-icons > a {
+  bottom: 30px;
+}
+
+@media #{$tablet} {
+
+  .topbar-navigation-item {
+    height: 60px;
+    padding: 0px 0px;
+  }
+}

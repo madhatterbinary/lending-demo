@@ -1,0 +1,157 @@
+// SASS Variables
+@import 'src/scss/base/colors';
+@import 'src/scss/base/mediaqueries';
+
+.communication-preferences {
+
+    .radio-tax-buttons>* {
+        margin-left: 10px;
+        margin-right: 0px;
+
+    }
+
+    h2 {
+        &.title {
+            font-size: 1.3em;
+            font-weight: 300;
+        }
+    }
+
+    .radio-tax-buttons {
+        h3 {
+            &.title {
+                padding-bottom: 0;
+                padding-top: 0;
+                width: 1330px;
+            }
+        }
+    }
+
+    input {
+        margin-right: 5px !important;
+    }
+
+    .insurance-number>* {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 300px;
+    }
+
+    .insurance-number {
+        max-width: 530px;
+    }
+
+    .radio-inputs {
+        width: 100%;
+    }
+
+    .radio-tax-buttons {
+        h2.title {
+            min-width: 338px;
+        }
+    }
+}
+
+.communication-preferences:nth-child(2)>* {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.communication-preferences:nth-child(3) {
+    h3.title {
+        padding-bottom: 0;
+        padding-top: 0;
+        margin-top: 0;
+    }
+}
+
+@media #{$tablet} {
+    .savings-user-information-timeline {
+        width: 100vw;
+    }
+
+    .communication-preferences:nth-child(3) {
+        h2 {
+            &.title {
+                margin-top: 40px;
+            }
+        }
+    }
+
+    .communication-preferences:nth-child(2) {
+        h2 {
+            &.title {
+                margin-top: 0px;
+            }
+        }
+    }
+
+    .communication-preferences {
+        width: 300px !important;
+
+        h1 {
+            margin-bottom: 0px;
+        }
+
+        .radio-tax-buttons>* {
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+        .radio-tax-buttons {
+            flex-direction: column;
+            max-width: 400px;
+
+            h3 {
+                &.title {
+                    padding-bottom: 20px;
+                    padding-top: 20px;
+                    width: 100%;
+                }
+            }
+        }
+
+        input {
+            margin-right: 5px !important;
+            width: 250px;
+        }
+
+        .radio-tax-buttons {
+            input {
+                margin-left: 12px;
+            }
+        }
+
+        .insurance-number>* {
+            margin-left: 10px;
+            margin-right: 10px;
+            width: 215px;
+        }
+
+        .insurance-number {
+            max-width: 530px;
+            flex-direction: column;
+        }
+
+        .radio-inputs {
+            width: 100%;
+        }
+
+        .radio-tax-buttons {
+            h2.title {
+                min-width: 100px;
+            }
+        }
+    }
+
+    .start-savings-screen.residency {
+        .form-container {
+            padding-top: 0px !important;
+
+            h1 {
+                line-height: 35px;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,29 @@
+// SASS Variables
+@import 'src/scss/base/colors.scss';
+@import 'src/scss/base/mediaqueries.scss';
+
+.loan-footer {
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+        .title {
+            padding: 0;
+        }
+    }
+
+    .dot {
+        color: $secondary-brand-color;
+        font-size: 3.1em;
+    }
+}
+
+@media #{$tablet} {
+    .loan-footer {
+        h3 {
+            .footer {
+                width: 77%;
+            }
+        }
+    }
+}

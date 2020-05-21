@@ -1,0 +1,22 @@
+@import 'src/scss/base/colors';
+@import 'src/scss/base/mediaqueries';
+
+.text-field {
+    label {
+        display: block;
+
+        .input-error {
+            color: $error-color;
+        }
+    }
+
+    p {
+        line-height: 25px;
+    }
+
+    input {
+        &.error {
+            border: 1px solid $error-color;
+        }
+    }
+}

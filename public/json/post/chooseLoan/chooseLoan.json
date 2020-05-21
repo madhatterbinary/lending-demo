@@ -1,0 +1,86 @@
+{
+  "response": {
+    "next_action": "id_verification",
+    "data": {
+      "form_data": {
+        "loan_product_id": 9
+      },
+      "page_data": {
+        "completed_pages": [
+          "borrowing_details",
+          "personal_details",
+          "contact_details",
+          "credit_reference",
+          "get_loan_decision"
+        ],
+        "current_step": "product_offer",
+        "products": {
+          "ask": {
+            "term_in_months": 22,
+            "borrowing_amount": "10000.00",
+            "lend_date": "2018-11-21",
+            "repayment_day": 21,
+            "request_id": "2f1d70e8-d6e2-47fb-b965-ff45e32b1acf"
+          },
+          "responses": [
+            {
+              "loan_product_id": 9,
+              "loan_product_name": "YobotaTestLoan",
+              "loan_personalised_rate": "12.00",
+              "loan_monthly_payments": "505.78",
+              "loan_total_payable": "11127.27",
+              "loan_amount": "10000.00"
+            },
+            {
+              "loan_product_id": 10,
+              "loan_product_name": "YobotaTestLoanSingleRateTable",
+              "loan_personalised_rate": "19.90",
+              "loan_monthly_payments": "538.41",
+              "loan_total_payable": "11845.08",
+              "loan_amount": "10000.00"
+            }
+          ]
+        },
+        "gtm_data": {
+          "product_details": [
+            {
+              "loan_product_id": 9,
+              "loan_product_name": "YobotaTestLoan",
+              "loan_personalised_rate": "12.00",
+              "loan_monthly_payments": "505.78",
+              "loan_total_payable": "11127.27",
+              "loan_amount": "10000.00"
+            },
+            {
+              "loan_product_id": 10,
+              "loan_product_name": "YobotaTestLoanSingleRateTable",
+              "loan_personalised_rate": "19.90",
+              "loan_monthly_payments": "538.41",
+              "loan_total_payable": "11845.08",
+              "loan_amount": "10000.00"
+            }
+          ],
+          "SCA": 486,
+          "UUID": "95b929cc-b3b1-4c77-ad01-5e0b8a7b28c8",
+          "product_name": "STANDARD LOAN",
+          "channel": "Direct_web"
+        },
+        "loan_type": {
+          "page_title_tooltip": "Good news, you've been approved for our loan.",
+          "is_reward_loan": false
+        }
+      },
+      "ref_data": {}
+    },
+    "read_only": false,
+    "user_authenticated": false,
+    "errors": {
+      "form_validation": {
+        "form_error": [],
+        "form_fields": {}
+      }
+    }
+  },
+  "status_code": 200,
+  "csrf_token": "p7NiWLivSnKizCyhL4bsnXz90vZ6bYgpPp9LuC3WUkvr2lIt3F7Re0jJzm2Va4BP"
+}

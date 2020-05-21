@@ -1,0 +1,10 @@
+{
+    "api_response": {
+        "data": {
+            "gotoPersonalPage": {
+                "url": "Personal Page URL"
+            },
+            "redirectTo": "/yourloan/personalpage"
+        }
+    }
+}

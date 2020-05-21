@@ -1,0 +1,12 @@
+{
+    "api_response": {
+        "data": {
+            "signDocs": {
+                "terms": null,
+                "consent": null
+            },
+            "formErrors": {},
+            "redirectTo": "/yourloan/signyourdocuments"
+        }
+    }
+}

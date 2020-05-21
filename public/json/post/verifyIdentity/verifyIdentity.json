@@ -1,0 +1,194 @@
+{
+  "response": {
+    "next_action": "check_customer_account_exists",
+    "data": {
+      "form_data": {},
+      "page_data": {
+        "completed_pages": [
+          "borrowing_details",
+          "personal_details",
+          "contact_details",
+          "credit_reference",
+          "get_loan_decision",
+          "product_offer"
+        ],
+        "current_step": "id_verification",
+        "idv_questions": [
+          {
+            "question_id": 6,
+            "question_text": "How much was the mortgage for?",
+            "question_choices": [
+              {
+                "answer_id": 1,
+                "answer_value": "£ 4500 to £ 4999"
+              },
+              {
+                "answer_id": 2,
+                "answer_value": "£ 5000 to £ 5499"
+              },
+              {
+                "answer_id": 3,
+                "answer_value": "£ 5500 to £ 5999 (correct)"
+              },
+              {
+                "answer_id": 4,
+                "answer_value": "£ 6000 to £ 6499"
+              },
+              {
+                "answer_id": 5,
+                "answer_value": "None of the Above"
+              }
+            ],
+            "header_text": "Your Equifax credit file indicates that you may have a mortgage account opened on or around September 2017 and updated in October 2018."
+          },
+          {
+            "question_id": 5,
+            "question_text": "Who is your mortgage provider?",
+            "question_choices": [
+              {
+                "answer_id": 1,
+                "answer_value": "ALLIANCE & LEICESTER"
+              },
+              {
+                "answer_id": 2,
+                "answer_value": "HSBC (correct)"
+              },
+              {
+                "answer_id": 3,
+                "answer_value": "LLOYDS BANK"
+              },
+              {
+                "answer_id": 4,
+                "answer_value": "ROYAL BANK OF SCOTLAND"
+              },
+              {
+                "answer_id": 5,
+                "answer_value": "None of the Above"
+              }
+            ],
+            "header_text": "Your Equifax credit file indicates that you may have a mortgage account opened on or around September 2017 and updated in October 2018."
+          },
+          {
+            "question_id": 4,
+            "question_text": "What was your credit limit at the time of your last statement?",
+            "question_choices": [
+              {
+                "answer_id": 1,
+                "answer_value": "£ 1000 to £ 1499 (correct)"
+              },
+              {
+                "answer_id": 2,
+                "answer_value": "£ 1500 to £ 1999"
+              },
+              {
+                "answer_id": 3,
+                "answer_value": "£ 2000 to £ 2499"
+              },
+              {
+                "answer_id": 4,
+                "answer_value": "£ 2500 to £ 2999"
+              },
+              {
+                "answer_id": 5,
+                "answer_value": "None of the Above"
+              }
+            ],
+            "header_text": "Your Equifax credit file indicates that you may have a credit or store card account opened on or around July 2017 and updated in October 2018."
+          },
+          {
+            "question_id": 3,
+            "question_text": "Who provides your credit or store card?",
+            "question_choices": [
+              {
+                "answer_id": 1,
+                "answer_value": "CAPQUEST"
+              },
+              {
+                "answer_id": 2,
+                "answer_value": "CLOSE BROTHERS"
+              },
+              {
+                "answer_id": 3,
+                "answer_value": "FIRST DIRECT (correct)"
+              },
+              {
+                "answer_id": 4,
+                "answer_value": "STYLE FINANCIAL SERVICES (ROYAL BANK OF SCOTLAND)"
+              },
+              {
+                "answer_id": 5,
+                "answer_value": "None of the Above"
+              }
+            ],
+            "header_text": "Your Equifax credit file indicates that you may have a credit or store card account opened on or around July 2017 and updated in October 2018."
+          },
+          {
+            "question_id": 2,
+            "question_text": "What is your overdraft limit on this account?",
+            "question_choices": [
+              {
+                "answer_id": 1,
+                "answer_value": "£ 500 to £ 999"
+              },
+              {
+                "answer_id": 2,
+                "answer_value": "£ 1000 to £ 1499 (correct)"
+              },
+              {
+                "answer_id": 3,
+                "answer_value": "£ 1500 to £ 1999"
+              },
+              {
+                "answer_id": 4,
+                "answer_value": "£ 2000 to £ 2499"
+              },
+              {
+                "answer_id": 5,
+                "answer_value": "None of the Above"
+              }
+            ],
+            "header_text": "Your Equifax credit file indicates that you may have a current account opened on or around October 2017."
+          },
+          {
+            "question_id": 1,
+            "question_text": "Who is the account provider?",
+            "question_choices": [
+              {
+                "answer_id": 1,
+                "answer_value": "FIRST DIRECT"
+              },
+              {
+                "answer_id": 2,
+                "answer_value": "LLOYDS BANK (correct)"
+              },
+              {
+                "answer_id": 3,
+                "answer_value": "NATIONWIDE BUILDING SOCIETY"
+              },
+              {
+                "answer_id": 4,
+                "answer_value": "ROYAL BANK OF SCOTLAND"
+              },
+              {
+                "answer_id": 5,
+                "answer_value": "None of the Above"
+              }
+            ],
+            "header_text": "Your Equifax credit file indicates that you may have a current account opened on or around October 2017."
+          }
+        ]
+      },
+      "ref_data": {}
+    },
+    "read_only": false,
+    "user_authenticated": false,
+    "errors": {
+      "form_validation": {
+        "form_error": [],
+        "form_fields": {}
+      }
+    }
+  },
+  "status_code": 200,
+  "csrf_token": "tS2uHsqyArYBwkCVfrtnSSHJtlc4dcgMTaoXfjbZCoJKZ3M7x2pMJVrj2cfTciBc"
+}

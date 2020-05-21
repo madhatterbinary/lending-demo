@@ -1,0 +1,59 @@
+// SASS Variables
+@import 'src/scss/base/colors';
+@import 'src/scss/base/mediaqueries';
+
+.verify-identity-screen {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    h1 {
+        margin-bottom: 40px;
+    }
+
+    h3 {
+        width: 60%;
+
+        &.title {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            padding-top: 0;
+        }
+    }
+
+    .select-field {
+        select {
+            padding-right: 50px;
+            width: 500px;
+            font-family: 'Pt sans';
+        }
+    }
+}
+
+@media #{$tablet} {
+    .verify-identity-screen {
+        bottom: 20px;
+        position: relative;
+
+        h1,
+        h3 {
+            width: 90vw;
+
+            &.title {
+                width: 90vw;
+            }
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .select-field {
+            select {
+                padding-right: 50px;
+                width: 300px;
+            }
+        }
+        .verify-identity-form.form-container {
+            padding-top: 30px;
+        }
+    }
+}

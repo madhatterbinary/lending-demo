@@ -1,0 +1,98 @@
+// SASS Variables
+@import 'src/scss/base/colors';
+@import 'src/scss/base/mediaqueries';
+
+.general-error-screen {
+    display: flex;
+    max-width: 1000px;
+    background: whitesmoke;
+    a {
+        color:$warning-color;
+    }
+    p, h1, h2, h3 {
+        text-align: left;
+        padding-right: 60px;
+    }
+    p {
+        font-size: 1.1em;
+    }
+    h1 {
+        margin-bottom: 30px; 
+        align-self: start;
+        &.error{
+            color:$warning-color!important;
+        } 
+    }
+    flex-direction: column;
+        .title {
+            color: $warning-color;
+        }
+    .general-error-screen-content {
+        margin-left: 60px;
+        display: flex;
+        flex-direction: column;
+        .error-header {
+          margin-top: 60px;
+          margin-bottom: 60px;
+        }
+        .idva-assessment-error {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .idva-assessment-error > * {
+            padding-right: 20px;
+            padding-top: 20px;
+        }
+        .dotted-text-container {
+            margin-left: -35px;
+            .dotted-text {
+                display: flex;
+                flex-direction: row;
+            }
+            .dotted-text > * {
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-right: 10px;
+            }
+        }
+        button {
+          align-self: flex-end;
+          margin-right: 95px;
+        }
+    }
+    .general-error-screen-content.small-warning {
+        .error-header {
+            display: none;
+        }
+        h3.title {
+            align-self: start;
+            width: 100%;
+        }
+        .idva-assessment-error {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .idva-assessment-error > * {
+            padding-right: 20px;
+            padding-top: 20px;
+        }
+        .dotted-text-container {
+            margin-left: -35px;
+            .dotted-text {
+                display: flex;
+                flex-direction: row;
+            }
+            .dotted-text > * {
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-right: 10px;
+            }
+        }
+        button {
+          align-self: flex-end;
+          margin-right: 95px;
+        }
+    }
+}

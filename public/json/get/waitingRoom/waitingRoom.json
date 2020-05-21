@@ -1,0 +1,15 @@
+{
+  "response": {
+    "next_action": "waiting_room",
+    "data": {
+      "page_data": {
+        "poll_url": "/waitingRoom/status",
+        "consumer": "postcode_checker"
+      }
+    },
+    "read_only": false,
+    "user_authenticated": false
+  },
+  "status_code": 200,
+  "csrf_token": "BixJwlytmPYdSOUvo0O3ql3fwfyIJ2NlK8eH4aFxyrR644KnA1rkXooiUZCt7Xse"
+}

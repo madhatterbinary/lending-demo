@@ -1,0 +1,70 @@
+// SASS Variables
+@import 'src/scss/base/colors';
+@import 'src/scss/base/mediaqueries';
+
+.lending-details-info-screen {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+    position: relative;
+
+    h3 {
+        max-width: 600px;
+    }
+
+    .details-form.form-container {
+        padding: 20px;
+    }
+
+    .submit-box {
+        display: flex;
+        flex-direction: column;
+    }
+    .form-row {
+        padding-top: 20px;
+    }
+}
+
+.picker div:nth-child(1) div {
+    display: none !important;
+}
+
+.picker :nth-child(2) {
+    bottom: 0;
+    position: relative;
+}
+
+@media #{$tablet} {
+    .lending-details-info-screen {
+        span {
+            line-height: 1.5;
+        }
+
+        h3 {
+            margin-top: 50px;
+        }
+
+        h1 {
+            margin-bottom: 0px;
+        }
+
+        .details-form {
+            position: relative;
+            width: 320px;
+
+            .picker {
+                padding-bottom: 25px;
+            }
+        }
+
+        .details-form.form-container {
+            padding-top: 10px;
+        }
+
+    }
+
+    .primary-color-stripe-content {
+        flex-direction: row !important;
+    }
+}

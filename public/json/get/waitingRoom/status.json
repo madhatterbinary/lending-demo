@@ -1,0 +1,12 @@
+{
+  "response": {
+    "status": "SUCCESS",
+    "next_action": "personal_details",
+    "data": {
+      "page_data": {
+        "poll_url": "/get/waitingRoom/status.json",
+        "consumer": "postcode_checker"
+      }
+    }
+  }
+}

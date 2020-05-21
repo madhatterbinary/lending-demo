@@ -1,0 +1,139 @@
+// SASS Variables
+@import 'src/scss/base/colors.scss';
+@import 'src/scss/base/mediaqueries.scss';
+
+.start-savings-screen {
+    width: 100%;
+
+    .savings-slider {
+        padding-bottom: 35px;
+        padding-top: 50px;
+        width: 100%;
+    }
+
+    .features-with-icons {
+        align-items: center;
+        color: $font-color;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-left: 10px;
+        margin-right: 10px;
+        max-width: 1200px;
+        padding-top: 125px;
+        position: relative;
+        text-align: center;
+
+        .features-with-icons-child {
+            height: 350px;
+            max-width: 500px;
+        }
+    }
+}
+
+.savings-wrapper {
+    width: 240px;
+
+    h3 {
+        padding: unset;
+        width: inherit;
+    }
+}
+
+@media #{$tablet} {
+    .start-savings-screen {
+
+        .features-with-icons {
+            flex-direction: column;
+            padding-top: 0;
+
+            .features-with-icons-child {
+                display: block;
+                height: auto;
+                margin-bottom: 30px;
+
+                h1 {
+                    height: auto;
+                    line-height: 40px;
+                    margin-bottom: 20px;
+                    padding-bottom: unset !important;
+                }
+
+                p {
+                    margin-left: auto;
+                    margin-right: auto;
+                    max-width: 90%;
+                }
+            }
+        }
+
+        .start-savings-application {
+            .primary-color-stripe {
+                top: 50px;
+            }
+
+            .fade-300-enter-done {
+                .fixed-rate-title {
+                    height: auto;
+                    margin-bottom: 0 !important;
+                }
+            }
+
+            a .button {
+                height: auto !important;
+                width: 100%;
+                border-radius: 18px;
+            }
+
+            .button {
+                height: 93px !important;
+                border-radius: 50px;
+                width: 90%;
+            }
+
+            .loan-features {
+                margin-bottom: 10px !important;
+                margin-top: 20px !important;
+                padding: unset !important;
+            }
+
+            .savings-slider {
+                align-self: center;
+                padding-top: 0;
+                width: 85vw;
+            }
+
+            .horizontal-slider-container {
+                margin: auto;
+                width: 100%;
+            }
+
+            .stripe-container {
+                flex-direction: column !important;
+                margin-bottom: 0;
+                margin-top: 0;
+
+                h1 {
+                    margin-bottom: 20px;
+                    top: 0;
+                }
+            }
+
+            .form-container {
+                .horizontal-slider-container {
+                    padding-bottom: 0;
+                }
+
+                .horizontal-slider-input input[type='number'] {
+                    width: 200px;
+                }
+            }
+
+            .interest-earnable {
+                h1 {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

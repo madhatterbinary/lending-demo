@@ -1,0 +1,161 @@
+// SASS Variables
+@import 'src/scss/base/colors';
+@import 'src/scss/base/mediaqueries';
+
+.summary-savings-screen {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    .primary-color-stripe {
+        .stripe-container {
+            .pencil-button {
+                display: none;
+            }
+        }
+    }
+}
+
+@media #{$tablet} {
+    .summary-savings-screen {
+        h1:first-child {
+            margin-bottom: 10px;
+            font-size: 1.75em;
+            line-height: 30px;
+        }
+
+        h1:nth-child(2) {
+            line-height: 30px;
+        }
+
+        h1 {
+            height: auto;
+        }
+
+        .secondary-invert-color {
+            margin-top: 40px;
+        }
+
+        .title-white {
+            h1 {
+                margin-top: 0;
+            }
+
+            margin-top: 0;
+        }
+
+        .textbox-container {
+            border-bottom: 1px solid $background-grey;
+            width: 100vw;
+
+            .visible {
+                max-height: 800px;
+            }
+
+            .table-container {
+                margin-bottom: 20px;
+                width: 320px !important;
+
+                tbody {
+                    tr {
+                        height: 30px;
+
+                        select {
+                            -webkit-appearance: menulist-button;
+                            border: unset;
+                            color: $font-color;
+                            font-size: 1em;
+                            height: 80px;
+                            padding-left: 10px;
+                            padding-right: 10px;
+                            width: unset;
+                        }
+
+                        th {
+                            background-color: $background-grey;
+                            color: $primary-brand-color;
+                            font-size: 1.1em;
+                            height: 80px;
+                            padding-left: unset;
+                            padding-right: unset;
+                            text-transform: uppercase;
+                            vertical-align: middle;
+                        }
+
+                        td {
+                            border-right: 1px solid $background-grey;
+                            vertical-align: middle;
+                            width: 100px;
+                        }
+                    }
+                }
+            }
+
+            p {
+                color: $primary-brand-color;
+                font-size: 1.2em;
+                font-weight: 800;
+                padding-bottom: 20px;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            .info-para {
+                color: $font-color;
+                font-size: 1em;
+                font-weight: 400;
+                padding-left: unset;
+                padding-right: unset;
+            }
+        }
+
+        .primary-color-stripe {
+            .stripe-container {
+                flex-direction: column !important;
+                padding-bottom: 0;
+
+                .secondary-tiny {
+                    display: none;
+                }
+
+                .pencil-button {
+                    display: block;
+                }
+
+                .open-account {
+                    height: auto;
+                    margin-bottom: 50px;
+                    padding-bottom: 10px;
+                    padding-top: 10px;
+                }
+
+                .savings-wrapper {
+                    .rates-for-mobile {
+                        display: flex;
+                        justify-content: space-around;
+
+                        h1 {
+                            padding-left: 10px;
+                            padding-right: 10px;
+                        }
+                    }
+
+                    width: unset;
+
+                    h1 {
+                        line-height: unset;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+
+        .loan-buttons {
+            flex-direction: column;
+
+            &>* {
+                margin: 20px;
+            }
+        }
+    }
+}

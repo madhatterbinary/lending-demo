@@ -1,0 +1,25 @@
+// SASS Variables
+@import 'src/scss/base/colors';
+@import 'src/scss/base/mediaqueries';
+
+.start-savings-screen {
+    display: flex;
+    flex-direction: column;
+}
+
+@media #{$tablet} {
+    .start-savings-screen {
+        .bank-details-savings-form {
+            max-width: 90vw;
+            align-self: center;
+
+            .bank-account-bullets {
+                p {
+                    max-width: 100%;
+                }
+            }
+
+        }
+    }
+
+}

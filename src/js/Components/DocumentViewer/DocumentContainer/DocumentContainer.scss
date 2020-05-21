@@ -1,0 +1,18 @@
+// SASS Variables
+@import 'src/scss/base/colors.scss';
+@import 'src/scss/base/mediaqueries.scss';
+.documents-container {
+    .header-content {
+        h3 {
+         padding-bottom: 0px;
+         padding-top: 0px;
+        }
+        .submit-button {
+         width: 150px;
+         align-self: center;
+        }
+        .submit-button:after{
+            display: none;
+        }
+    }
+}

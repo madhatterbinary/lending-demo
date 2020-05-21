@@ -1,0 +1,60 @@
+// SASS Variables
+@import 'src/scss/base/colors.scss';
+@import 'src/scss/base/mediaqueries.scss';
+.communication-preferences-screen {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 0px;
+    h3 {
+        width: auto;
+    }
+    .field {
+        max-width: 650px;
+        display: inline-flex;
+    }
+    .communication-preferences-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .communication-preferences-content>* {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .box-preference {
+        background: $light-grey;
+        padding: 40px;
+        max-width: 340px;
+    }
+}
+
+@media #{$tablet} {
+    .communication-preferences-screen {
+        h1 {
+            width: 88%;
+            margin-bottom: 30px;
+        }
+        h3.title {
+            margin-top: 0px;
+            padding-top: 0px;
+            width: 60%;
+        }
+        h3 {
+            width: 90%;
+        }
+        .field {
+            max-width: 350px;
+        }
+        .md-checkbox {
+            left: 30px;
+        }
+        .communication-preferences-content {
+            flex-direction: column;
+        }
+        .communication-preferences-content>* {
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+    }
+}

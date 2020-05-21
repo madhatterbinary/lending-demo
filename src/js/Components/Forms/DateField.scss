@@ -1,0 +1,24 @@
+@import 'src/scss/base/colors';
+@import 'src/scss/base/mediaqueries';
+
+.date-field {
+    label {
+        display: block;
+
+        p {
+            line-height: 25px;
+        }
+
+        .input-error {
+            color: $error-color;
+        }
+    }
+
+    input {
+        &::-webkit-inner-spin-button,
+        &::-webkit-calendar-picker-indicator {
+            -webkit-appearance: none;
+            display: none;
+        }
+    }
+}

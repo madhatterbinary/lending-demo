@@ -1,0 +1,229 @@
+// SASS Variables
+@import 'src/scss/base/colors.scss';
+@import 'src/scss/base/mediaqueries.scss';
+
+.horizontal-slider-container {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 0 1 auto;
+    justify-content: center;
+    padding-bottom: 35px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+
+    .slider-box {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+}
+
+.horizontal-slider-title {
+    color: $font-color;
+    flex-basis: 100%;
+    float: left;
+    font-size: 1.5em;
+    font-weight: 700;
+    order: 0;
+    position: relative;
+    text-align: left;
+    width: 100%;
+}
+
+.horizontal-slider-bar {
+    box-sizing: border-box;
+    flex-basis: 60%;
+    order: 2;
+    width: 60%;
+
+    .rangeslider-horizontal {
+        background: $background-grey;
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0);
+        height: 23px;
+
+        .rangeslider__fill {
+            background: linear-gradient(to right, $primary-brand-color, $secondary-brand-color-dark);
+            border-radius: 10px;
+            border: 1px solid $primary-brand-color;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0);
+            height: 100%;
+            top: 20px;
+        }
+
+        .rangeslider__handle {
+            border-color: $primary-brand-color;
+            border-radius: 18px;
+            box-shadow: 0 1px 0px rgba(1, 134, 63, 0.4), 0 1px 0px rgba(1, 210, 99, 0.4);
+            height: 35px;
+            width: 50px;
+
+            &:focus {
+                outline: transparent;
+            }
+
+            &::after {
+                background-color: transparent;
+                box-shadow: 0 1px 3px rgba(1, 134, 63, 0) inset, 0 -1px 3px rgba(1, 210, 99, 0) inset;
+            }
+        }
+
+        .rangeslider__handle-tooltip {
+            display: none;
+        }
+    }
+
+    .min-max-values {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        position: relative;
+        color: $font-color;
+        font-size: 1.1em;
+    }
+}
+
+.horizontal-slider-input {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-basis: 40%;
+    flex-direction: column;
+    justify-content: center;
+    order: 3;
+    padding-bottom: 20px;
+    position: relative;
+    text-align: center;
+    width: 40%;
+
+    label {
+        display: block;
+    }
+
+    input[type='number'] {
+        border: 1px solid $primary-brand-color;
+        color: $primary-brand-color;
+        font-size: 1.6em;
+        font-weight: 700;
+        line-height: 36px;
+        padding-top: 5px;
+        text-align: center;
+        vertical-align: middle;
+        width: 240px;
+
+        &.right {
+            background: transparent;
+            text-align: left;
+            padding-left: 60px;
+            padding-right: 20px;
+        }
+
+        &.left {
+            padding-left: 50px;
+        }
+    }
+
+    .feedback-text.error-text {
+        top: 50px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .input-extra-label {
+        position: relative;
+        color: $primary-brand-color;
+        font-size: 1.7em;
+        font-weight: 700;
+        top: 14px;
+
+        &.right,
+        &.left {
+            top: -36px;
+        }
+
+        &.right {
+            left: 18px;
+        }
+
+        &.left {
+            right: 40px;
+        }
+    }
+
+    /* Validation styles */
+    .invalid input {
+        border-color: $error-color;
+    }
+
+    input:focus + label,
+    .dirty input + label {
+        opacity: 1;
+    }
+}
+
+@media #{$tablet} {
+    .horizontal-slider-container {
+        flex-direction: column;
+
+        .slider-box {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .horizontal-slider-title,
+    .horizontal-slider-input,
+    .horizontal-slider-bar {
+        width: 100%;
+        flex-basis: 100%;
+    }
+
+    .horizontal-slider-title {
+        order: 0;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .horizontal-slider-input {
+        order: 1;
+
+        input[type='number'] {
+            width: 300px;
+
+            &.right {
+                padding-right: 135px;
+            }
+        }
+
+        padding-bottom: 0px;
+    }
+
+    .horizontal-slider-bar {
+        order: 3;
+    }
+
+    .input-extra-label {
+        &.right {
+            padding-left: 0px;
+        }
+
+        &.left {
+            padding-right: 0px;
+        }
+    }
+
+    input[type='number'] {
+        &.left {
+            padding-left: 40px !important;
+        }
+    }
+
+    input[type='number'] {
+        &.right {
+            padding-left: 88px !important;
+        }
+    }
+}

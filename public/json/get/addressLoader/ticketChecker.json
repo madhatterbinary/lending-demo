@@ -1,0 +1,24 @@
+{
+	"status": "SUCCESS",
+	"redirect": null,
+	"tickets_pending": 0,
+	"tickets_failed": 0,
+	"tickets_succeeded": 0,
+	"addresses": [{
+		"line_1": "GAUDEN ROAD",
+		"line_2": null,
+		"county": null,
+		"building": "106A",
+		"postcode": "SW4 6LU",
+		"post_town": "LONDON",
+		"unique_address_id": "98003857329"
+	}, {
+		"line_1": "GAUDEN ROAD",
+		"line_2": null,
+		"county": null,
+		"building": "106",
+		"postcode": "SW4 6LU",
+		"post_town": "LONDON",
+		"unique_address_id": "98001473091"
+	}]
+}

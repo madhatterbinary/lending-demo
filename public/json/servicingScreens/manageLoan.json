@@ -1,0 +1,13 @@
+{
+  "data": {
+    "loan_amount": "15000",
+    "loan_rate": "19.9",
+    "agreed_annuity": "339.39",
+    "total_payable": "16000",
+    "form_data": {
+      "additional_payment": null,
+      "reduce_loan_term": false,
+      "reduce_monthly_payment": false
+    }
+  }
+}

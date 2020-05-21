@@ -1,0 +1,47 @@
+{
+    "next_action": "customer_details",
+    "data": {
+        "form_data": {
+            "value": {
+              "annual_interest_rate": "2.0% Gross 2.0% AER",
+              "interest_paid": "Annually",
+              "maturity_date": "16th November 2019"
+            },
+            "validators": {
+              "loan_amount": {
+                "field_type": "range",
+                "required": true,
+                "max_value": 85000,
+                "min_value": 1000
+              },
+              "term_in_months": {
+                "field_type": "range",
+                "required": true,
+                "max_value": 60,
+                "min_value": 12
+              }
+            },
+            "options": {}
+          },
+      "page_data": {
+        "completed_pages": [],
+        "annual_interest_rate_gross": 2.0,
+        "annual_interest_rate_aer": 2.0,
+        "interest_paid": "Annually",
+        "maturity_date": "2019-11-16T01:00:00+01:00",
+        "account_type": "1 Year Fixed Rate Saver",
+        "saving_amount": 4000,
+        "total_interest": 80
+      }
+    },
+    "read_only": false,
+    "user_authenticated": false,
+    "errors": {
+      "form_validation": {
+        "form_error": [],
+        "form_fields": {}
+      }
+    },
+    "status_code": 200,
+    "csrf_token": "PpCIwUNqSW2LpsfoB68vptYQZTy30h478la9EyiuEpzJKmuXbOfx1b7pRq3VfXBu"
+  }

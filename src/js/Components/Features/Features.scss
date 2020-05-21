@@ -1,0 +1,10 @@
+// SASS Variables
+@import 'src/scss/base/colors.scss';
+@import 'src/scss/base/mediaqueries.scss';
+
+@media #{$tablet} {
+.loan-features-content {
+    position: relative;
+    bottom:0px;
+}
+}

@@ -1,0 +1,53 @@
+// SASS Variables
+@import 'src/scss/base/colors';
+@import 'src/scss/base/mediaqueries';
+
+.toast-main {
+    display: flex;
+    align-items: center;
+    .toast-text {
+        p {
+            text-align: left;
+            color:white;
+        }
+    }
+}
+
+.Toastify__toast-container--top-right {
+    top: 6em;
+    .material-icons {
+        color: white;
+        font-size: 40px;
+        padding-right: 10px;
+    }
+}
+
+.Toastify__toast--default {
+    //background:$info-color;
+    background:transparent;
+}
+
+.Toastify__toast {
+    font-family: 'Pt sans';
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.Toastify__close-button--default {
+    display: none;
+}
+
+.Toastify__progress-bar--default {
+    background: white;
+}
+.toast-main {
+    padding: 8px;
+}
+
+.toast-main.info {
+  background: $info-color;
+}
+.toast-main.confirm {
+  background: $confirmMsg;
+}

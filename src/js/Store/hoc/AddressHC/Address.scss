@@ -1,0 +1,213 @@
+// SASS Variables 
+@import 'src/scss/base/colors';
+@import 'src/scss/base/mediaqueries';
+
+.address-info-screen {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    h3 {
+        max-width: 600px;
+    }
+
+    .flex-row-reverse {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .loan-quote-panel-edit {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+        position: relative;
+        width: 100%;
+    }
+
+    .address-item-container {
+        background: $light-grey;
+        padding: 20px;
+        margin-bottom: 50px;
+        padding-bottom: 0;
+        width: 500px;
+        padding-left: 50px;
+        padding-right: 50px;
+
+        .address-status {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 100%;
+            padding-bottom: 40px;
+            position: relative;
+            top: 30px;
+            padding-bottom: 50px;
+            align-self: center;
+        }
+
+        .address-status>* {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            align-self: center;
+        }
+
+        .addressForm {
+            .dot {
+                color: $secondary-brand-color;
+                font-size: 5em;
+                padding-bottom: 10px;
+            }
+
+            ul {
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+                justify-content: center;
+                padding-bottom: 0px;
+                padding-top: 20px;
+            }
+        }
+
+        p {
+            text-align: left;
+        }
+
+        .address-box-container {
+            margin: 0 !important;
+            visibility: hidden;
+        }
+
+        .address-box-container-show {
+            background-color: $lighter-grey;
+            align-self: left;
+            text-align: left;
+            padding: 15px;
+            display: inline-block;
+            width: 300px;
+            margin-top: 10px;
+            color: $font-color;
+
+            .answer>* {
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+        }
+
+        input:not([type='checkbox']),
+        .select-field select {
+            width: 300px;
+            font-size: 1em;
+            height: 40px;
+            align-self: center;
+        }
+
+        .select-field:after {
+            right: 0px;
+        }
+
+        .addressForm {
+            padding-top: 10px !important;
+
+            button {
+                top: 20px;
+            }
+        }
+
+        h3 {
+            width: 100%;
+        }
+    }
+}
+
+@media #{$tablet} {
+    .address-info-screen {
+        h1 {
+            margin-bottom: 0;
+        }
+        align-items: center;
+        align-self: center;
+
+        .form-container {
+            padding-top: 0px;
+        }
+
+        ul {
+            padding-top: 20px;
+            padding-bottom: 0px;
+        }
+
+        li {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 0px;
+        }
+
+        .address-item-container {
+            background: $light-grey;
+            padding: 20px;
+            margin-bottom: 50px;
+            padding-bottom: 0;
+            width: 287px;
+
+            .address-box-container-show {
+                text-align: left;
+                background: $lighter-grey;
+                width: 300px;
+                align-self: center;
+            }
+
+            .address-status {
+                flex-direction: column;
+                width: 300px;
+                margin-bottom: 40px;
+                align-self: center;
+            }
+
+            .address-status>* {
+                margin-left: 0;
+                margin-right: 0;
+                display: flex;
+                flex-direction: column;
+                width: 300px;
+                align-self: center;
+            }
+
+            p {
+                text-align: left;
+            }
+        }
+
+        .loan-features {
+            margin-top: -100px !important;
+        }
+
+        input:not([type='checkbox']),
+        .select-field select {
+            width: 300px!important;
+            font-size: 1em;
+            height: 40px;
+            align-self: center;
+        }
+
+        .select-field:after {
+            right: 0px;
+        }
+
+        .addressForm {
+            padding-top: 10px !important;
+
+            button {
+                top: 20px;
+            }
+        }
+
+        .loan-features {
+            margin-top: -100px !important;
+        }
+    }
+}
